@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabadat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/8GsTy26UE0lDGqoFOeClJ_t1874nm9gqBEUfX62Ztcpq9aOMuMI6xrpByAxqxOid-m4" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Kabadat</h1>
+        <h3>Kalkulator Bangun Datar</h3>
+    </header>
+    <main>
+        <h2>Selamat datang di Kabadat!</h2>
+        <p class="centered-text">Kabadat adalah website sederhana yang bisa kalian gunakan sebagai kalkulator untuk menghitung luas dan keliling bangun datar.</p>
+        
+        <br>
+        <div class="shape-buttons">
+            <button id="btnPersegi" class="shape-button">Persegi</button>
+            <button id="btnPersegiPanjang" class="shape-button">Persegi Panjang</button>
+        </div>
+
+        <div id="shapeImage"></div>
+        <p id="formulaText"></p>
+        <hr>
+        <h2 id="calculateTitle">Hitung Persegi</h2>
+        <div id="inputContainer">
+            <input type="number" id="length" placeholder="Masukkan panjang sisi">
+            <input type="number" id="width" placeholder="Masukan lebar sisi">
+        </div>
+        <p id="resultText"></p>
+        <div id="calculationSteps"></div>
+        <div class="action-buttons">
+            <button id="btnCalculate" class="calculate-button">Hitung</button>
+            <button id="btnReset" class="reset-button">Reset</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
